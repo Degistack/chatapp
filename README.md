@@ -10,6 +10,9 @@ Ethereum development environment: Hardhat
 Ethereum Web Client Library - Web3.js
 Local Blockchain: Hardhat node
 
+Prerequisites
+Node.js installed on your local machine
+MetaMask Chrome extension installed in your browser
 
 Run locally
 Clone the repo
@@ -33,3 +36,33 @@ Modify the constant ChatAppAddress with the address which you get during deploym
 
 Run the app
 npm run dev
+
+1. Clone this repository
+
+```sh
+git clone github.com/Degistack/chatapp
+```
+
+2. Install the dependencies
+
+```sh
+npm install
+```
+
+3. Run the local node
+
+```sh
+npx hardhat node
+```
+
+4. Deploy to localhost
+
+```sh
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+5. Start the app
+
+```sh
+npm start
+```
